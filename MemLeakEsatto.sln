@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MemLeakEvents", "MemLeakEvents\MemLeakEvents.csproj", "{218F54B3-724A-4ACC-99A1-C3414306D829}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E7CF7398-36C2-44DC-AB58-35660D314F5F}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemLeakEvents.Api", "MemLeakEvents.Api\MemLeakEvents.Api.csproj", "{F8F54866-01B2-4C96-A657-3D5AF8323C1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemLeakEvents.MemoryTests", "MemLeakEvents.MemoryTests\MemLeakEvents.MemoryTests.csproj", "{BFB9AC42-408E-4006-B412-16D03EA4FAEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{218F54B3-724A-4ACC-99A1-C3414306D829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{218F54B3-724A-4ACC-99A1-C3414306D829}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{218F54B3-724A-4ACC-99A1-C3414306D829}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{218F54B3-724A-4ACC-99A1-C3414306D829}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8F54866-01B2-4C96-A657-3D5AF8323C1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8F54866-01B2-4C96-A657-3D5AF8323C1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8F54866-01B2-4C96-A657-3D5AF8323C1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8F54866-01B2-4C96-A657-3D5AF8323C1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFB9AC42-408E-4006-B412-16D03EA4FAEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFB9AC42-408E-4006-B412-16D03EA4FAEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFB9AC42-408E-4006-B412-16D03EA4FAEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFB9AC42-408E-4006-B412-16D03EA4FAEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC909D52-1BC1-45A1-9881-71A59E5854F7}
+	EndGlobalSection
+EndGlobal
