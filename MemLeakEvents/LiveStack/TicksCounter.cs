@@ -3,7 +3,7 @@ using System.Threading;
 
 namespace MemLeakEvents.LiveStack
 {
-    public class TicksCounter
+    public class TicksCounter : IDisposable
     {
         private int _tickCounter = 0;
         public TicksCounter()
@@ -18,5 +18,8 @@ namespace MemLeakEvents.LiveStack
         public int GetTicks()
             => _tickCounter;
 
+        public void Dispose()
+        {
+        }
     }
 }

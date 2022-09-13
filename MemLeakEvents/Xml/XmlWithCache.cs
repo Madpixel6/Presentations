@@ -16,7 +16,7 @@ public class XmlWithCache
         }
     }
     
-    internal static class XmlSerializerCache
+    internal class XmlSerializerCache 
     {
         private static readonly object Lock = new();
         private static readonly Dictionary<string, System.Xml.Serialization.XmlSerializer> Cache = new();
