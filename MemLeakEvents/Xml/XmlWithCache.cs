@@ -6,30 +6,32 @@ namespace MemLeakEvents.Xml;
 
 public class XmlWithCache
 {
-    public XmlWithCache()
+    public void Run(int iterations = 10000)
     {
         var key = Guid.NewGuid();
-        while (true)
+        for (var i = 0; i < iterations; i++)
         {
             var s = XmlSerializerCache.Create(typeof(object), key.ToString());
-            s.Serialize(Stream.Null, new object { });
+            s.Serialize(Stream.Null, new object());
         }
     }
     
     internal static class XmlSerializerCache
     {
-        private static readonly Dictionary<string, System.Xml.Serialization.XmlSerializer> Cache =
-            new Dictionary<string, System.Xml.Serialization.XmlSerializer>();
+        private static readonly object Lock = new();
+        private static readonly Dictionary<string, System.Xml.Serialization.XmlSerializer> Cache = new();
 
         public static System.Xml.Serialization.XmlSerializer Create(Type type, string key)
         {
-
-            if (!Cache.ContainsKey(key))
+            lock (Lock)
             {
-                Cache.Add(key, new System.Xml.Serialization.XmlSerializer(type, new Type[] { }));
-            }
+                if (!Cache.ContainsKey(key))
+                {
+                    Cache.Add(key, new System.Xml.Serialization.XmlSerializer(type, new Type[] { }));
+                }
 
-            return Cache[key];
+                return Cache[key];
+            }
         }
     }
 }

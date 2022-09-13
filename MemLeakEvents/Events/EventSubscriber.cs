@@ -5,32 +5,32 @@ namespace MemLeakEvents.Events
 {
     internal class EventSubscriber
     {
-        private readonly int id;
-        private readonly ICollection<Guid> collectedGuids;
-        private readonly EventPublisher eventPublisher;
+        private readonly int _id;
+        private readonly ICollection<Guid> _collectedGuids;
+        private readonly EventPublisher _eventPublisher;
 
         public EventSubscriber(EventPublisher eventPublisher, int id)
         {
-            this.collectedGuids = new List<Guid>();
-            this.id = id;
-            this.eventPublisher = eventPublisher;
+            _collectedGuids = new List<Guid>();
+            _id = id;
+            _eventPublisher = eventPublisher;
         }
 
         public void Subscribe()
         {
-            this.eventPublisher.SomeEvent += this.OnSomeEvent;
+            _eventPublisher.SomeEvent += OnSomeEvent;
         }
 
         private void OnSomeEvent(object sender, Guid guid)
         {
-            this.collectedGuids.Add(guid);
+            _collectedGuids.Add(guid);
 
-            Logger.WriteLine($"{nameof(EventSubscriber)} {this.id}: OnSomeEvent received {{{guid}}}");
+            ConsoleLogger.WriteLine($"{nameof(EventSubscriber)} {_id}: OnSomeEvent received {{{guid}}}");
         }
 
         public void Unsubscribe()
         {
-            this.eventPublisher.SomeEvent -= this.OnSomeEvent;
+            _eventPublisher.SomeEvent -= OnSomeEvent;
         }
     }
 }

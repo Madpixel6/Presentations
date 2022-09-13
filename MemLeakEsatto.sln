@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemLeakEvents.Api", "MemLeakEvents.Api\MemLeakEvents.Api.csproj", "{F8F54866-01B2-4C96-A657-3D5AF8323C1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemLeakEvents.MemoryTests", "MemLeakEvents.MemoryTests\MemLeakEvents.MemoryTests.csproj", "{BFB9AC42-408E-4006-B412-16D03EA4FAEA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemLeakEvents.ConsoleApp", "MemLeakEvents.ConsoleApp\MemLeakEvents.ConsoleApp.csproj", "{60BD3A7B-3B1F-489B-9336-7BB5DCBF4933}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,10 +28,10 @@ Global
 		{F8F54866-01B2-4C96-A657-3D5AF8323C1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8F54866-01B2-4C96-A657-3D5AF8323C1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8F54866-01B2-4C96-A657-3D5AF8323C1F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BFB9AC42-408E-4006-B412-16D03EA4FAEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BFB9AC42-408E-4006-B412-16D03EA4FAEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BFB9AC42-408E-4006-B412-16D03EA4FAEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BFB9AC42-408E-4006-B412-16D03EA4FAEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60BD3A7B-3B1F-489B-9336-7BB5DCBF4933}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60BD3A7B-3B1F-489B-9336-7BB5DCBF4933}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60BD3A7B-3B1F-489B-9336-7BB5DCBF4933}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60BD3A7B-3B1F-489B-9336-7BB5DCBF4933}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

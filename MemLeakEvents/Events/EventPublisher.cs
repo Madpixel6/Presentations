@@ -9,7 +9,7 @@ namespace MemLeakEvents.Events
         public void PublishEvents()
         {
             var guid = Guid.NewGuid();
-            Logger.WriteLine($"{nameof(EventPublisher)}: PublishEvents sends {{{guid}}}");
+            ConsoleLogger.WriteLine($"{nameof(EventPublisher)}: PublishEvents sends {{{guid}}}");
             this.SomeEvent?.Invoke(this, guid);
         }
     }

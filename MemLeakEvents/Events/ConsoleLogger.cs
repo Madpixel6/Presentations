@@ -2,7 +2,7 @@
 
 namespace MemLeakEvents.Events
 {
-    internal static class Logger
+    internal static class ConsoleLogger
     {
         public static bool IsEnabled { get; set; }
 
