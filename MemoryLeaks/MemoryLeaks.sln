@@ -3,16 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MemLeakEvents", "MemLeakEvents\MemLeakEvents.csproj", "{218F54B3-724A-4ACC-99A1-C3414306D829}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MemoryLeaks", "MemoryLeaks\MemoryLeaks.csproj", "{218F54B3-724A-4ACC-99A1-C3414306D829}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E7CF7398-36C2-44DC-AB58-35660D314F5F}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemLeakEvents.Api", "MemLeakEvents.Api\MemLeakEvents.Api.csproj", "{F8F54866-01B2-4C96-A657-3D5AF8323C1F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryLeaks.Api", "MemoryLeaks.Api\MemoryLeaks.Api.csproj", "{F8F54866-01B2-4C96-A657-3D5AF8323C1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemLeakEvents.ConsoleApp", "MemLeakEvents.ConsoleApp\MemLeakEvents.ConsoleApp.csproj", "{60BD3A7B-3B1F-489B-9336-7BB5DCBF4933}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryLeaks.ConsoleApp", "MemoryLeaks.ConsoleApp\MemoryLeaks.ConsoleApp.csproj", "{60BD3A7B-3B1F-489B-9336-7BB5DCBF4933}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

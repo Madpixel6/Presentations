@@ -8,7 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\MemLeakEvents\MemLeakEvents.csproj" />
+      <ProjectReference Include="..\MemoryLeaks\MemoryLeaks.csproj" />
     </ItemGroup>
 
 </Project>

@@ -1,5 +1,4 @@
-﻿using System;
-using MemLeakEvents.Events;
+﻿using MemLeakEvents.Events;
 using MemLeakEvents.LiveStack;
 using MemLeakEvents.StaticAllocation;
 using MemLeakEvents.Xml;
@@ -28,6 +27,9 @@ namespace MemLeakEvents
             xmlCached.Run();
         }
 
+        /// <summary>
+        /// Runs 10 threads with Timer that will never terminate
+        /// </summary>
         public static void RunNeverTerminatingThread()
         {
             for (var i = 0; i < 10; i++)
@@ -35,14 +37,12 @@ namespace MemLeakEvents
                 var notificationPusher = new TicksCounter();
                 notificationPusher.GetTicks();
             }
-            //GC.Collect();
-            //GC.WaitForPendingFinalizers();
         }
 
-        public static void RunEventsMemoryLeak()
+        public static void RunEventsMemoryLeak(bool isUnsubscribing = false)
         {
             var eventsLeak = new EventsLeak();
-            eventsLeak.Run();
+            eventsLeak.Run(isUnsubscribing);
         }
     }
 }
